@@ -28,7 +28,7 @@
             <a class="nav-link text-white active" aria-current="page" href="#">Início</a>
           </li>
           <li class="nav-item bar-border">
-            <a class="nav-link text-white" href="Reportagem1.html">Aminimigas</a>
+            <a class="nav-link text-white" href="animigas.html">Aminimigas</a>
           </li>
           <li class="nav-item bar-border">
             <a class="nav-link text-white" href="#">Aba 2</a>
@@ -43,11 +43,28 @@
       </div>
     </div>
   </nav>
+  
+  <div id="banner-video-frontPage" class="banner-video mb-5">
+    <div class="row position-relative">
+      <video id="banner-video-inner" class="col" loop muted>
+        <source src="data/videoPlaceHolder_1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      <div class="banner-video-inner-tittle col position-absolute"> Texto </div>
+    </div>
+  </div>
 
-  <section class="banner"></section>
+  <script>
+    let vid = document.getElementById("banner-video-inner"); 
+    document.getElementById("banner-video-frontPage").addEventListener("mouseover", function() {
+          vid.play();
+        });
+          document.getElementById("banner-video-frontPage").addEventListener("mouseleave",function() {
+          vid.pause();
+        });
+  </script>
 
   <main class="container mb-5">
-    <h1>Título</h1>
     <h2 style=" margin-top: -15px;">Subtítulo</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque ultricies lacinia. Morbi et consequat tortor. Praesent luctus erat eget imperdiet bibendum. Mauris tincidunt iaculis arcu et finibus. Vestibulum dapibus porttitor mattis. Vivamus libero metus, consectetur at tortor ac, ultricies egestas purus. Nulla placerat lacus id lorem facilisis, convallis venenatis orci consectetur. Donec vel faucibus risus, vel tempor tortor.</p>
     <p>Mauris sit amet velit sed velit pulvinar pellentesque. Mauris ut ex nunc. Vestibulum non placerat turpis. Nunc eu quam non ante vehicula auctor vel maximus eros. Aenean pellentesque nibh quis orci gravida, ut molestie arcu maximus. Etiam id nulla aliquam, porttitor elit ultrices, porta tortor. Nunc finibus tempus diam in rhoncus. Vivamus cursus magna sit amet quam ultrices, et vulputate erat posuere. Morbi odio purus, blandit id porttitor nec, vehicula a odio. Aenean vel vulputate elit. Praesent ornare risus faucibus nisl dignissim efficitur. Nunc vel tellus vestibulum, consectetur sapien et, consectetur ipsum. Cras venenatis eros sit amet sollicitudin tempor. Nunc consequat placerat erat vel cursus.</p>
@@ -57,7 +74,7 @@
   </main>
 
   <footer class="text-center">
-    <p>Autores: Exemplo</p>
+    <p style="color: rgb(0, 0, 0);">Autores: Exemplo</p>
     <address>
       <a href="mailto:exemplo@exemplo.com" style="color: black;">exemplo@exemplo.com</a>
     </address>
