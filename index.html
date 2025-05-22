@@ -9,68 +9,91 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg position-relative py-2">
     <div class="container-fluid">
-      <a class="navbar-brand me-auto" href="#">
+      <div class="navbar-brand me-auto" href="#">
         <img src="data/logo white high contrast.svg" alt="Logo" height="80">
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item bar-border">
-            <a class="nav-link text-white active" aria-current="page" href="#">Início</a>
+      </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link bar-border text-white active" href="index.html">Início</a>
           </li>
-          <li class="nav-item bar-border">
-            <a class="nav-link text-white" href="animigas.html">Aminimigas</a>
-          </li>
-          <li class="nav-item bar-border">
-            <a class="nav-link text-white" href="#">Aba 2</a>
-          </li>
-          <li class="nav-item bar-border">
-            <a class="nav-link text-white" href="#">Aba 3</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link bar-border dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              reportagens
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="animigas.html">Aminimigas</a></li>
+              <li><a class="dropdown-item" href="#">Reportagem 2</a></li>
+              <li><a class="dropdown-item" href="#">Reportagem 3</a></li>
+              <li><a class="dropdown-item" href="#">Reportagem 4</a></li>
+              <li><a class="dropdown-item" href="#">Reportagem 5</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Depoimentos</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="sobre.html">Sobre nós</a>
+            <a class="nav-link bar-border text-white" href="#">documentário</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="sobre.html">sobre&nbsp;nós</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  
-  <div id="banner-video-frontPage" class="banner-video mb-5">
-    <div class="row position-relative">
-      <video id="banner-video-inner" class="col" loop muted>
-        <source src="data/videoPlaceHolder_1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-      <div class="banner-video-inner-tittle col position-absolute"> Texto </div>
+
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="data/Hero-Banner-Placeholder-Dark-1024x480.png" class="d-block w-100" alt="placeholder">
+      </div>
+      <div class="carousel-item">
+        <img src="data/Hero-Banner-Placeholder-Dark-1024x480.png" class="d-block w-100" alt="placeholder">
+      </div>
+      <div class="carousel-item">
+        <img src="data/Hero-Banner-Placeholder-Dark-1024x480.png" class="d-block w-100" alt="placeholder">
+      </div>
     </div>
   </div>
 
-  <script>
-    let vid = document.getElementById("banner-video-inner"); 
-    document.getElementById("banner-video-frontPage").addEventListener("mouseover", function() {
-          vid.play();
-        });
-          document.getElementById("banner-video-frontPage").addEventListener("mouseleave",function() {
-          vid.pause();
-        });
-  </script>
+  <main class="container my-5">
+    <h1 style="text-align: center;">Título</h1>
+    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque ultricies lacinia. Morbi et consequat tortor. Praesent luctus erat eget imperdiet bibendum. Mauris tincidunt iaculis arcu et finibus.</p>
 
-  <main class="container mb-5">
-    <h2 style=" margin-top: -15px;">Subtítulo</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque ultricies lacinia. Morbi et consequat tortor. Praesent luctus erat eget imperdiet bibendum. Mauris tincidunt iaculis arcu et finibus. Vestibulum dapibus porttitor mattis. Vivamus libero metus, consectetur at tortor ac, ultricies egestas purus. Nulla placerat lacus id lorem facilisis, convallis venenatis orci consectetur. Donec vel faucibus risus, vel tempor tortor.</p>
-    <p>Mauris sit amet velit sed velit pulvinar pellentesque. Mauris ut ex nunc. Vestibulum non placerat turpis. Nunc eu quam non ante vehicula auctor vel maximus eros. Aenean pellentesque nibh quis orci gravida, ut molestie arcu maximus. Etiam id nulla aliquam, porttitor elit ultrices, porta tortor. Nunc finibus tempus diam in rhoncus. Vivamus cursus magna sit amet quam ultrices, et vulputate erat posuere. Morbi odio purus, blandit id porttitor nec, vehicula a odio. Aenean vel vulputate elit. Praesent ornare risus faucibus nisl dignissim efficitur. Nunc vel tellus vestibulum, consectetur sapien et, consectetur ipsum. Cras venenatis eros sit amet sollicitudin tempor. Nunc consequat placerat erat vel cursus.</p>
-    <p>Cras egestas elit justo, eu pretium arcu egestas eu. Integer posuere dolor augue, vel dignissim felis iaculis sit amet. Maecenas nunc arcu, laoreet sit amet finibus eu, hendrerit nec tellus. Praesent efficitur dolor non libero gravida, ut tincidunt mauris porta. Ut at varius sem. Sed vel ex eget ex dapibus venenatis sit amet ac lacus. Quisque hendrerit ex mauris, eget tincidunt urna dictum vitae. Aenean tincidunt lorem non magna volutpat congue. Fusce non elit lorem.</p>
-    <p>Curabitur ornare metus at felis interdum, ut elementum nibh congue. Integer nec cursus elit. Maecenas lorem nisl, rutrum id placerat in, condimentum feugiat velit. Aliquam vel tempus lectus, et faucibus magna. Aenean ut dui pharetra, placerat massa sed, congue odio. Proin id lacinia diam. Integer accumsan nisl vitae justo hendrerit pellentesque. Donec ac sagittis sapien. Nam porta vestibulum leo, et venenatis ligula placerat quis. Cras lacus dolor, rutrum sed nisi at, rutrum volutpat est. Vivamus est nibh, faucibus sit amet mauris in, facilisis sodales urna. Sed congue, nulla ut eleifend finibus, nunc nibh euismod sem, vel accumsan nulla augue sed magna. Integer scelerisque aliquam lacus. Pellentesque non lectus felis. Quisque in lectus blandit, luctus ligula quis, feugiat urna.</p>
-    <p>Nulla facilisi. Nulla id metus pulvinar, finibus velit et, pretium ipsum. Etiam vitae tempor lacus. Aenean eu auctor enim. Aliquam nec tellus ligula. Cras condimentum justo ut convallis mattis. Mauris ut risus at sapien accumsan tincidunt id id elit. Nulla ante tortor, auctor et massa id, luctus consequat risus. Nam luctus nibh elit, in interdum quam maximus a. Nullam at dolor dapibus, placerat nisi sed, mollis enim. Mauris mollis lacus mauris, quis venenatis sem ultricies sit amet. Nullam pulvinar congue aliquet. In hac habitasse platea dictumst. Cras pellentesque iaculis ex. Cras sed lectus neque.</p>
+    <div class="container my-5">
+      <div class="row featurette" data-aos="fade-left">
+        <div class="col-md-7">
+          <h2>Primeiro call to action</h2>
+          <p>Vestibulum dapibus porttitor mattis. Vivamus libero metus, consectetur at tortor ac, ultricies egestas purus.</p>
+        </div>
+        <div class="col-md-5">
+          <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+        </div>
+      </div>
+
+      <div style="height: 5vh;"></div>
+
+      <div class="row featurette" data-aos="fade-right">
+        <div class="col-md-7 order-md-2">
+          <h2>Algum título muito bom para uma citação</h2>
+          <p>Nulla placerat lacus id lorem facilisis, convallis venenatis orci consectetur. Donec vel faucibus risus, vel tempor tortor.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <footer class="text-center">
@@ -87,5 +110,14 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 650,
+        once: true
+      });
+    });
+  </script>
 </body>
 </html>

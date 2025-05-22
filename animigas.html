@@ -14,46 +14,66 @@
 <body>
   <nav class="navbar navbar-expand-lg position-relative py-2">
     <div class="container-fluid">
-      <a class="navbar-brand me-auto" href="#">
+      <div class="navbar-brand me-auto" href="#">
         <img src="data/logo white high contrast.svg" alt="Logo" height="80">
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item bar-border">
-            <a class="nav-link text-white" href="index.html">Início</a>
+      </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link bar-border text-white" href="index.html">Início</a>
           </li>
-          <li class="nav-item bar-border">
-            <a class="nav-link text-white active" aria-current="page" href="#">Aminimigas</a>
-          </li>
-          <li class="nav-item bar-border">
-            <a class="nav-link text-white" href="#">Aba 2</a>
-          </li>
-          <li class="nav-item bar-border">
-            <a class="nav-link text-white" href="#">Aba 3</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link bar-border dropdown-toggle text-white active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              reportagens
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active active-dropdown" href="animigas.html">Aminimigas</a></li>
+              <li><a class="dropdown-item" href="#">Reportagem 2</a></li>
+              <li><a class="dropdown-item" href="#">Reportagem 3</a></li>
+              <li><a class="dropdown-item" href="#">Reportagem 4</a></li>
+              <li><a class="dropdown-item" href="#">Reportagem 5</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Depoimentos</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="sobre.html">Sobre nós</a>
+            <a class="nav-link bar-border text-white" href="#">documentário</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="sobre.html">sobre&nbsp;nós</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <div id="tittle-video-article" class="tittle-video">
+    <div class="video-container">
+      <video loop muted autoplay playsinline>
+        <source src="data/videoPlaceHolder_1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="video-text-container">
+      <div class="video-text"><span>Por que aprendemos a nos odiar se estamos conectadas?</span></div>
+      <div class="video-subtext"><span>Entenda os mecanismos históricos e sociais que tornaram a rivalidade feminina um fenômeno cultural possível</span></div>
+    </div>
+  </div>
+  
+
   <main class="container my-5">
-    <h2 style="font-size: 30pt; font-family: mango; font-weight: 600;">Aminimigas: por que aprendemos a nos odiar se estamos conectadas?</h1>
-    <h2 class="mb-4" style="font-size: 15pt;">Entenda os mecanismos históricos e sociais que tornaram a rivalidade feminina um fenômeno cultural possível</h2>
-    
+
+    <div class="box-divider mb-5"></div>
+
     <p>Uma das sete mulheres de sua extensa família, <strong>Shay </strong>passou a infância rodeada de livros, enciclopédias e uma alta dose de testosterona — eram avôs, tios e primos por todos os lados. Cresceu apaixonada pelas culturas estrangeiras estampadas nas páginas que lia e inevitavelmente influenciada pelos costumes que experenciava em casa.</p>
     <p>Natural de Nova Friburgo, no Rio de Janeiro, ela conta que, mesmo cultivando algumas amizades femininas pelo caminho, chegou ao ensino médio pensando que conviver e lidar com homens era mais fácil.</p>
-    <div class="mb-3"><div class="citation"> “Durante a minha adolescência, isso foi uma coisa que pesou. Porque, ao mesmo tempo que eu queria ter mais amigas, eu não sabia como fazer amizade com meninas e me sentia muito excluída. Eu gostava de muita coisa e tinha aquela concepção errada de que o feminino era algo ruim”, </div> <div class="citation-ref">relembra a publicitária, hoje com 23 anos.</div></div>
+    <div class="citation"><div class="citation-inner"> “Durante a minha adolescência, isso foi uma coisa que pesou. Porque, ao mesmo tempo que eu queria ter mais amigas, eu não sabia como fazer amizade com meninas e me sentia muito excluída. Eu gostava de muita coisa e tinha aquela concepção errada de que o feminino era algo ruim”, </div> <div class="citation-ref">relembra a publicitária, hoje com 23 anos.</div></div>
     <p><strong>Nathália</strong> também não sabia como corresponder aos ideais de feminilidade nem como se relacionar com as garotas ao seu redor. Em certas ocasiões, mudou o guarda-roupa, o jeito de falar e até a própria personalidade tentando ser incluída nos grupinhos da escola. Mas um desconforto ainda maior surgiu na vida adulta, assim que ingressou no mercado de trabalho.</p>
     <p>Auxiliar de produção e embalagens, ela não só precisou se adequar a um ambiente majoritariamente masculino, como enfrentar embates frequentes com as poucas mulheres contratadas pela indústria.</p>
-    <div class="mb-3"><div class="citation"> “Imaginei que encontraria acolhimento nas mulheres mais velhas, acreditei que seriam mais experientes e compreensivas, talvez até por já terem passado por situações parecidas. Foi um choque perceber que, muitas vezes, elas se mostravam mais críticas e competitivas. É como se estivessem armadas, sempre preparadas para apontar falhas”, </div> <div class="citation-ref">relata a estudante de medicina veterinária, que mora no interior de São Paulo.</div></div>
+    <div class="citation"><div class="citation-inner"> “Imaginei que encontraria acolhimento nas mulheres mais velhas, acreditei que seriam mais experientes e compreensivas, talvez até por já terem passado por situações parecidas. Foi um choque perceber que, muitas vezes, elas se mostravam mais críticas e competitivas. É como se estivessem armadas, sempre preparadas para apontar falhas”, </div> <div class="citation-ref">relata a estudante de medicina veterinária, que mora no interior de São Paulo.</div></div>
     <p>As jovens não se conhecem, mas as contradições notadas por elas não são frutos do acaso. Em algum momento de suas vidas, as mulheres aprendem a não se reconhecerem como iguais e a criarem barreiras umas contra as outras. É um tipo de entendimento que não se comprova cientificamente, no entanto, continua sendo reverberado de geração em geração, inclusive, de mulheres para meninas.</p>
     <p>Na escola, no emprego, no barzinho e na igreja: elas estão fofocando sobre você ou prontas para puxar seu tapete. São invejosas, falsas e ardilosas, além de terem apreço por futilidades que não moldam caráter nem impulsionam o sucesso das civilizações. Tudo isso é “coisa de mulher”. Mas será que sempre foi assim?</p>
     <figure class="my-4">
@@ -78,7 +98,7 @@
     <p>Para especialistas, o mesmo motor discursivo pode ser observado no desaparecimento seletivo das <a href="https://super.abril.com.br/cultura/as-divindades-femininas-no-principio-eram-as-deusas/#:~:text=%C3%8Dsis%2C%20a%20mais%20antiga%20deusa,velho%20e%20gerava%20o%20novo.">deusas cultuadas pela antiguidade</a> e na história de <a href="https://www.uol.com.br/universa/noticias/redacao/2019/11/13/nao-so-eva-conheca-lilith-a-suposta-e-feminista-primeira-mulher-de-adao.htm">Adão e Eva</a>, que fundamenta a origem da humanidade dentro das religiões cristãs. Nela, ao ser concebida a partir da costela do homem, a mulher é deslocada da possibilidade de ser um fim em si mesma.</p>
     <p>“Há um trabalho sistemático para o apagamento das deidades femininas, colocando as mulheres em condições de subalternidade dentro do imaginário. Então, hoje, nós já temos a possibilidade de pensar nas religiões não só como locais de fé, mas também como ferramentas de manipulação”, analisa <strong>Tainara Vasconcellos</strong>, professora de Teoria e Metodologia da História e doutoranda em História na Universidade Federal Rural do Rio de Janeiro (UFRRJ).</p>
     <figure class="my-4">
-      <img src="data/IMAGEM 3 - estátuas.png" alt="textalt" style="width:100%;padding-left: 25%; padding-right: 25%;">
+      <img src="data/IMAGEM 3 - deusas na antiguidade.jpeg" alt="textalt" style="width:100%;padding-left: 15%; padding-right: 15%;">
       <figcaption>Em sociedades estruturadas e operadas em torno de religiões que continham deusas, como Creta, Mesopotâmia e Ilhas Cíclades, há indícios de sacerdotisas que realizavam importantes rituais (Foto: reprodução/PEITA)</figcaption>
     </figure>
     <p>Embora todos esses aspectos tenham contribuído para a produção de noções negativas de feminilidade, pesquisadores e estudiosos concordam que nada impactou tanto a imagem pública das mulheres e suas relações familiares, afetivas e geracionais quanto a <strong>institucionalização do patriarcalismo</strong> — sistema que já se desenvolvia gradualmente sem ganhar uma nomeação exata, estruturando as situações de opressão sofridas pela população feminina no decorrer dos séculos.</p>
@@ -89,13 +109,14 @@
     <p>“Não que o machismo não existisse naquela época, ele existia, mas não era cultural. Ele não era como o patriarcado que conhecemos hoje e as mulheres conheceram à frente dessa época feudal. Então, [a construção do] fenótipo da bruxa — uma mulher nariguda, velha, que vive na floresta com seu caldeirão —, foi o ponto central para que esses laços entre mulheres pudessem ser rompidos e atacados”, descreve ela.</p>
     <figure class="my-4">
       <img src="data/Infográfico - Idade Média.png" alt="textalt" style="width:100%">
-      <figcaption>Como era a vida feminina na Idade Média? (Infográfico: produção própria)</figcaption>
     </figure>
     <p>Ao longo de quatrocentos anos, a partir do século XV, a investida política e religiosa perseguiu, suprimiu e relativizou inúmeras manifestações de mulheres tidas como <a href="https://repositorio.usp.br/item/003104842">feiticeiras</a>, sob a justificativa de preservar a ordem social então existente contra heresias, crimes e outras atividades condenáveis.</p>
     <p>Na prática, esses propósitos acabavam distorcidos. Medeiros afirma que qualquer mulher viria a ser alvo dessa sistematização, uma vez que suas ferramentas visavam “transformar o corpo feminino em propriedade do Estado, da família patriarcal e da economia”.</p>
     <p>Orquestrado pelas grandes frentes de poder da época, o trabalho de repressão também buscava fragilizar a <a href="https://www.infomoney.com.br/economia/mulheres-sao-maioria-nas-organizacoes-sociais/">capacidade de organização das mulheres</a>. Segundo Vasconcellos, isso ocorreu porque, durante milênios, elas foram as principais responsáveis por rebeliões contra conjunturas sociais e econômicas que prejudicavam a vida dos cidadãos de modo comum, tanto na Europa quanto nas Américas.</p>
     <p>No fim da Idade Média, por sua vez, essas lutas se concentraram especialmente no combate à fome sistêmica.</p>
-    <iframe src="https://www.youtube.com/embed/NXTgBF-1quQ?si=hkSy-ziCm9KihBXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe class="viewer-16-9" src="https://www.youtube.com/embed/NXTgBF-1quQ?si=hkSy-ziCm9KihBXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     <p>Escapar do rótulo de bruxa se tornou uma tarefa ainda mais desafiadora à medida que <strong>situações de não-conformidade com os ditames masculinos se tornavam problemas endereçados às mulheres</strong>. Quando homens enfrentavam dificuldades de performance sexual, por exemplo, suas aflições eram tratadas como resultados de feitiços, mau olhados ou maldições.</p>
     <p>As reuniões femininas, em contrapartida, perdiam seu registro positivo no juízo popular. Tainara aponta que, com a ascensão da ordem patriarcal, a convivência entre mulheres foi entendida como uma ameaça: “percebeu-se que, juntas, as mulheres tinham algum tipo de potência. Então, elas passam a ser proibidas pelo Estado de ficarem uma na casa da outra. A conversa entre mulheres não só foi criminalizada, como rechaçada publicamente”.</p>
     <p>Gerolimich ressalta o papel crucial da <strong>deturpação do sentido original da fofoca</strong> nesse cenário — fato investigado pela filósofa <a href="https://www.brasildefato.com.br/2019/10/09/silvia-federici-matar-as-mulheres-e-a-forma-mais-eficaz-de-destruir-a-resistencia/">Silvia Federici</a> na obra <em>Calibã e a Bruxa: Mulheres, Corpo e Acumulação Primitiva</em>.</p>
@@ -113,14 +134,18 @@
     <p>Os homens brancos e mais abastados, por outro lado, não encontraram obstáculos para adentrar e dominar múltiplos espaços de poder e decisão, consolidando-se como os <a href="https://periodicos.ufrn.br/principios/article/view/472">sujeitos cartesianos</a> das grandes civilizações. “Para haver alguém elevado, alguém precisa ser diminuído. Isso cria a noção de feminilidade que nós temos no século XVIII”, enfatiza Tainara.</p>
     <p>Mas esse contexto não proporcionou uma queda nas iniciativas femininas em busca de condições dignas de vida. Pelo contrário: as sucessivas tentativas de sujeição das mulheres com base em transformações históricas causaram novos ciclos de revolta e resistência. Para se ter uma ideia, tanto a <strong>Revolução Russa</strong> quanto a <a href="https://www.brasildefato.com.br/2019/05/01/mulheres-estavam-na-linha-de-frente-da-primeira-greve-geral-da-historia-do-brasil/">primeira greve geral realizada no Brasil</a> foram iniciadas por elas.</p>
     <p>Estudiosos mencionam que um dos exemplos mais emblemáticos para entender a complexidade dessas lutas está na <strong>Revolução Francesa</strong>. Embora tenham participado ativamente das mobilizações do período, escrevendo manifestos e reivindicando direitos elementares nas ruas, as mulheres não apenas tiveram suas demandas ignoradas pelos líderes da época, como desapareceram dos principais registros históricos do movimento.</p>
-    <iframe src="https://www.youtube.com/embed/8FdgXeWAUc4?si=3_iWR3Dx8yq5pbmd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe class="viewer-16-9" src="https://www.youtube.com/embed/8FdgXeWAUc4?si=3_iWR3Dx8yq5pbmd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     <p>Ainda assim, os princípios de igualdade entre gêneros defendidos pelos trabalhos de ativistas como Sophie de Condorcet e <a href="https://guiadoestudante.abril.com.br/estudo/a-revolucionaria-francesa-guilhotinada-por-defender-os-direitos-das-mulheres/">Olympe de Gouges</a> permaneceriam vivos e inspirariam os primeiros passos alicerçados do <strong>feminismo</strong>, que surgiu sob esse título e enquanto uma manifestação social no fim do século XIX.</p>
     <p>Entre as novas maneiras de organização e manutenção dos grupos femininos, estava a persistência das “<strong>histórias vistas de baixo</strong>”. O termo é frequentemente usado para definir vivências que não atravessam a linha histórica tradicional, geralmente marcada pelos feitos de povos que detêm voz e poder; mas que, apesar disso, se constroem como túneis e procuram respiros na superfície quando possível.</p>
     <p>Construindo-se às margens para pleitear o centro das discussões, a história das mulheres foi um desses momentos escritos e reverberados por suas próprias agentes. “Vemos a história das mulheres em cartas, em diários e no relato oral. E muito do relato oral conta do tempo que as nossas avós viveram: como era essa situação, naquela cidade, naquela classe social que elas estavam”, revela Veras.</p>
     <p>Dessa forma, o fator geracional começa a caracterizar um rito de passagem de conhecimentos entre as mulheres, ao mesmo tempo que serve como instrumento para pautar as reivindicações e necessidades femininas. Segundo a historiadora, a <strong>mesa da cozinha</strong> emerge como uma continuação de ambos os significados.</p>
     <p>“Por mais que esse seja um espaço de trabalho doméstico, que condiz com a subordinação da mulher aos cuidados da casa, a mesa da cozinha também tem uma subversão. Então, quando nos reunimos na cozinha para falar com outras mulheres, a gente não apenas está subvertendo o distanciamento feminino, mas mantendo uma herança muito preciosa que nos é negada”, aponta Manoela.</p>
     <p>Mesmo sendo ambientes que não seguem o formato típico dos debates de militância, as mesas das cozinhas se tornam as <a href="https://manoelaveras.substack.com/p/a-mesa-da-cozinha">bases materiais das relações femininas dentro dos lares</a>, permitindo o desenvolvimento da escuta ativa, do aprendizado em rede e da criação coletiva.</p>
-    <iframe src="https://www.youtube.com/embed/9lAglrwUhh4?si=lu9ExkoCfmx38QyS " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe class="viewer-9-16" src="https://www.youtube.com/embed/9lAglrwUhh4?si=lu9ExkoCfmx38QyS " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     <p>Porém, se a maioria das conversas entre mulheres poderia acontecer em meio aos afazeres domésticos, o mundo fechava olhos e ouvidos para a oportunidade de expansão dos diálogos. Nesse ritmo, o avanço do projeto patriarcal fortalecia os grupos masculinos enquanto permanecia rejeitando e apagando a população feminina.</p>
     <p>“Quando crescemos sem referências, acabamos acreditando que o mundo sempre foi dessa forma. Temos diversos fatores operando dentro desse sistema, que se vale dessa cultura de colocar as mulheres nesse lugar de invisibilidade, de tirar a contribuição das mulheres da história da humanidade para dizer: ‘você não é ninguém’”, constata <strong>Jade Míguez</strong>, graduanda em Ciências Sociais na Universidade Federal do Recôncavo da Bahia (UFRB) e pesquisadora de Gênero, Raça e Classe.</p>
     <h3>Amor, mercado de trabalho e outras distorções sociais</h3>
@@ -136,7 +161,9 @@
     <p>“Não é sobre com quem uma mulher vai se relacionar, mas sobre a maneira como fomos socializadas. É como se a nossa vivência amorosa nos desse uma identidade. É como se só conseguíssemos nos enxergar enquanto mulheres plenas se temos um relacionamento ou estamos sendo amadas por alguém”, explica <strong>Lavínia Palma</strong>, psicóloga e fundadora do Núcleo de Estudos em Psicologia Feminista.</p>
     <p>Veras compreende que a distinção entre <a href="https://medium.com/qg-feminista/a-socializa%C3%A7%C3%A3o-feminina-%C3%A9-feita-para-enlouquecer-mulheres-53380ea875d6">o sujeito e o agente</a> dessa equação começa ainda na infância: “Nós somos ensinadas a gostar de homens e os homens são ensinados a terem hobbies. Nossas brincadeiras, nossos desenhos, são sempre pautados nisso. E os meninos podem ser super-heróis, desenvolver suas habilidades e esse gosto por si mesmos”<em>. </em></p>
     <p>A ação impositiva de amar apenas perante os desejos e as necessidades do outro configura um tipo de violência, porque presume a obrigatoriedade de negar a humanidade feminina. Difundido através da cultura e mídia globais, o mito, então, fez-se um pilar característico na construção da identidade das mulheres, além de um instrumento de dominação.</p>
-    <iframe src="https://www.youtube.com/embed/hWuXX9uUXl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <iframe class="viewer-9-16" src="https://www.youtube.com/embed/hWuXX9uUXl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
     <p>Em uma perspectiva histórica, o amor romântico ainda transformou os entendimentos afetivos, afastando as mulheres umas das outras e, inclusive, de si próprias.</p>
     <p>“Fomos criadas para amar o outro, sobretudo o homem. Mas não fomos criadas para distribuir esse amor de forma igualitária, com outras fontes de amor, como a amizade feminina”, defende Ingrid. Assim, quando existem, os laços afetivos entre mulheres se transformam em atividades de segundo plano.</p>
     <p>Essa lógica reforça a ideia de que os relacionamentos amorosos são uma garantia contra a solidão, tornando-os objeto de proteção máxima na vida feminina, mesmo diante dos problemas enfrentados nessa conjuntura.</p>
@@ -147,22 +174,26 @@
     <p>Mas comportamentos hostis refletem algo maior que um ódio estrutural ao próprio universo feminino. “Para mim, não é tanto sobre mulheres serem ensinadas a competir desde pequenas, mas sobre o fato de que essas estruturas [do mercado] foram deliberadamente criadas para manter o poder concentrado [entre homens]”, observa <strong>Gabriela Toso</strong>, presidente da <a href="https://www.todacidada.org/">Toda Cidadã</a>, organização que democratiza conhecimentos sobre política, sociedade e cidadania para mulheres.</p>
     <p>Embora não exposta para grande parte das mulheres em atividade, a concentração de poder notada pela comunicadora também pode ser vista em desníveis econômicos. No Brasil, 37% da população feminina empregada recebe até um salário mínimo. O índice cai para 27% entre os homens.</p>
     <p>Aliás, conforme o <a href="https://www.cnnbrasil.com.br/economia/macroeconomia/cargos-de-lideranca-mulheres-ganham-r-40-mil-a-menos-que-homens-por-ano/">Dieese</a> (Departamento Intersindical de Estatística e Estudos Socioeconômicos), ter diploma universitário não corresponde a equidade salarial: em nenhum cargo específico ou estado do país a média de remuneração mensal feminina supera a masculina.</p>
+
     <div class="flourish-embed flourish-chart" data-src="visualisation/22841786"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/22841786/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+
     <p>Paralelamente aos discursos contra a união feminina, as jornadas das mulheres aumentaram em diversas frentes. “Ninguém exige mais que o homem seja o total provedor [da família], mas continua-se exigindo muito da mulher: além de agora poder ser a provedora das necessidades, continua-se exigindo dela toda uma função social de cuidado”, propõe Ingrid.</p>
     <p>De acordo com a <a href="https://www.who.int/health-topics/gender">Organização Mundial da Saúde</a> (OMS), as diferenças de gênero influenciam diretamente os determinantes socioeconômicos, o que inclui o tratamento social recebido por homens e mulheres. E os resultados dessas pressões estruturais já são palpáveis.</p>
     <p>Em 2023, o levantamento <a href="https://lab.thinkolga.com/esgotadas/"><em>Esgotadas</em></a> apontou que a falta de dinheiro e a sobrecarga de trabalho são os maiores responsáveis pelo adoecimento psíquico das mulheres, chegando a atingir mais da metade das brasileiras. Para as entrevistadas, a insatisfação com relações familiares (30%) e relações com sua comunidade e suas amizades (24%) se reflete em importantes impactos emocionais.</p>
-    <div class="flourish-embed flourish-chart" data-src="visualisation/22922459"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/22922459/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+
+    <iframe src='https://flo.uri.sh/visualisation/22922459/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe><div style='width:100%!;margin-top:4px!important;text-align:right!important;'><a class='flourish-credit' href='https://public.flourish.studio/visualisation/22922459/?utm_source=embed&utm_campaign=visualisation/22922459' target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> </a></div>
+    
     <p>Esses sentimentos podem ser explicados tanto pela ausência latente da participação masculina na divisão de tarefas diárias quanto pela ambiguidade dos laços entre mulheres, que, embora social e historicamente atacados, nunca deixaram de ser os principais alicerces do cotidiano feminino.</p>
     <p>“Se você entrar em qualquer favela aqui do Rio de Janeiro, vai ver quem cuida do filho das outras. Na maioria das casas, os homens nem estão lá. As mulheres cuidam dos filhos sozinhas. Ou com a ajuda da avó, da tia, da prima, enfim, são sempre mulheres. Mas o que ficou na noção popular? Essa história de rivalidade”, pondera Gerolimich.</p>
     <p>Simultaneamente ao panorama desenhado pela socióloga, as complexidades e controvérsias da memória mundial também carregam forças que se propõem a resgatar os vínculos entre mulheres — inclusive, criando-os entre as que sequer se conhecem.</p>
     <p>Especialistas concordam que, das conexões globais proporcionadas pela internet aos encontros esporádicos nas calçadas, os diálogos femininos pautam discussões seculares e, ainda que de forma despretensiosa, ajudam a repensar o lugar e a vez dos interesses femininos.</p>
-    <div class="mb-3"><div class="citation"> “Adrienne Rich fala que as conexões mais poderosas e mais temidas vêm das mulheres. Eu acho que podemos aprender muito sozinhas, mas quando aprendemos compartilhando, e quando existem outras pessoas que comungam daquilo, tudo se torna muito mais interessante”, </div> <div class="citation-ref">conclui Míguez.</div></div>
+    <div class="citation"><div class="citation-inner"> “Adrienne Rich fala que as conexões mais poderosas e mais temidas vêm das mulheres. Eu acho que podemos aprender muito sozinhas, mas quando aprendemos compartilhando, e quando existem outras pessoas que comungam daquilo, tudo se torna muito mais interessante”, </div> <div class="citation-ref">conclui Míguez.</div></div>
   </main>
 
   <footer class="text-center">
     <p style="color: rgb(0, 0, 0);">Autores: Exemplo</p>
     <address>
-      <a href="mailto:exemplo@exemplo.com" style="color: black;">exemplo@exemplo.com</a>
+      <a href="mailto:exemplo@exemplo.com" style="color: black;" class="footer-mail">exemplo@exemplo.com</a>
     </address>
     <p>
       <a href="#" class="fa fa-facebook"></a>
