@@ -86,8 +86,7 @@ figcaption {
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
-  background-color: var(--main-color);
-  position: absolute;
+  background-color: var(--main-color); 
   left: 50%;
   transform: translateX(-50%);
 }
@@ -120,17 +119,17 @@ main {
   margin-right: 20px;
 }
 
+.box-divider {
+  height: 2px;
+  background-color: gray;
+  border-radius: 4px;
+  width: 25%;
+  margin-left: 37.5%;
+}
+
 /* ===== Cards e Containers ===== */
 .card {
   z-index: -1;
-}
-
-.box-divider {
-  height: 5px;
-  background-color: var(--secondary-color);
-  border-radius: 4px;
-  width: 75%;
-  margin-left: 12.5%;
 }
 
 .viewer-16-9 {
@@ -186,13 +185,21 @@ a.fa:hover {
 .footer-mail:hover{
   background-color: rgba(0, 0, 0, 0);
 }
-/* ===== Citações ===== */
+
+.soundcloud-embed{
+  max-width: 800px;
+}
+
+.soundcloud-embed-text:hover{
+  background-color: #00000000;
+}
+/* ===== Citações e destaque de texto ===== */
 .citation {
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 3vh;
   margin-bottom: 3vh;
-  scale: 1.1;
+  scale: 1;
 }
 
 .citation-inner {
@@ -203,17 +210,34 @@ a.fa:hover {
   padding-top: 0.5em;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
 }
 
 .citation-ref {
-  font-size: 10pt;
+  font-size: 12pt;
   padding-left: 1.35em;
   padding-top: 0.5em;
+}
+
+.text-highlight{
+  background-color: rgb(233, 157, 169);
 }
 
 /* ===== Video e Banner ===== */
 .carousel {
   z-index: -2;
+}
+
+.carousel-caption{
+  width: 50%;
+  max-height: 45%;
+  margin-left: 12.5%;
+}
+
+#carousel-reportagem1{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #tittle-video-article {
@@ -260,6 +284,8 @@ a.fa:hover {
 }
 
 .video-subtext {
+  width: 98%;
+  margin-left: 2%;
   margin-top: 12pt;
   color: black;
   text-align: center;
@@ -283,8 +309,8 @@ a.fa:hover {
 /* ===== Grids ===== */
 .thanks-inner {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 0.5em;
+  grid-template-columns: auto;
+  grid-gap: 2em;
 }
 
 .bar-border {
@@ -345,6 +371,16 @@ a.fa:hover {
   .video-subtext span {
     font-size: 4vw;
   }
+
+  #carousel-reportagem1{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .carousel-caption-text{
+    font-size: small;
+  }
 }
 
 @media (min-width: 984px) {
@@ -359,6 +395,10 @@ a.fa:hover {
 
 @media (max-height: 667px) {
   .video-text-container {
-    top: 95%;
+    top: 110%;
+  }
+  #tittle-video-article{
+    height: 60vh;
+    margin-bottom: 30vh;
   }
 }
