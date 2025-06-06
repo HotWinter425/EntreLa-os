@@ -25,6 +25,10 @@ a:hover {
   transition-duration: 0.4s;
 }
 
+.flourish-embed:hover{
+  color: none;
+}
+
 /* ===== Fontes ===== */
 @font-face {
   font-family: Mango;
@@ -69,6 +73,7 @@ h3 {
   font-size: 18pt;
   font-weight: bolder;
   color: var(--secondary-color);
+  margin-bottom: 1em;
 }
 
 figcaption {
@@ -80,6 +85,10 @@ figcaption {
 .nav-link {
   font-size: 13.5pt;
   font-family: Agrandir;
+}
+
+strong{
+  font-weight: bold;
 }
 
 /* ===== Layout e Componentes ===== */
@@ -110,10 +119,6 @@ footer {
   background-color: var(--main-color);
 }
 
-.footer-mail{
-  text-decoration: none;
-}
-
 main {
   margin-left: 20px;
   margin-right: 20px;
@@ -123,8 +128,8 @@ main {
   height: 2px;
   background-color: gray;
   border-radius: 4px;
-  width: 25%;
-  margin-left: 37.5%;
+  width: 15%;
+  margin-left: 42.5%;
 }
 
 /* ===== Cards e Containers ===== */
@@ -147,9 +152,17 @@ main {
 }
 
 #portraits {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
+#documentario{
+  max-height: 80vh;
+  width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  max-width: 1920px
+  }
 
 /* ===== Elementos interativos ===== */
 .fa {
@@ -187,7 +200,9 @@ a.fa:hover {
 }
 
 .soundcloud-embed{
-  max-width: 800px;
+  max-width: 100%;
+  margin-right: 0%;
+  margin-left: 0%;
 }
 
 .soundcloud-embed-text:hover{
@@ -229,9 +244,11 @@ a.fa:hover {
 }
 
 .carousel-caption{
-  width: 50%;
-  max-height: 45%;
-  margin-left: 12.5%;
+  width: 80%;
+  max-height: 30%;
+  margin-left: 10%;
+  left: 0;
+  padding-top: 20px;
 }
 
 #carousel-reportagem1{
@@ -264,7 +281,6 @@ a.fa:hover {
   left: 50%;
   transform: translateX(-50%);
   min-width: 100%;
-  filter: grayscale();
 }
 
 .video-text-container {
@@ -285,7 +301,7 @@ a.fa:hover {
 
 .video-subtext {
   width: 98%;
-  margin-left: 2%;
+  margin-left: 1%;
   margin-top: 12pt;
   color: black;
   text-align: center;
@@ -309,7 +325,7 @@ a.fa:hover {
 /* ===== Grids ===== */
 .thanks-inner {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   grid-gap: 2em;
 }
 
@@ -342,10 +358,11 @@ a.fa:hover {
     margin-left: 37.5%;
     margin-right: 37.5%;
   }
-
-  #portraits {
-    margin-left: 15%;
-    margin-right: 15%;
+  .carousel-caption{
+    width: 60%;
+    max-height: 45%;
+    margin-left: 20%;
+    left: 0;
   }
 }
 
@@ -361,6 +378,12 @@ a.fa:hover {
     margin-left: 10%;
     margin-right: 10%;
   }
+
+  #documentario{
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -371,15 +394,28 @@ a.fa:hover {
   .video-subtext span {
     font-size: 4vw;
   }
-
+  .carousel-caption{
+    padding-top: 10px;
+  }
   #carousel-reportagem1{
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
   }
-
   .carousel-caption-text{
     font-size: small;
+  }
+  p{
+  margin-bottom: 1.5em;
+  }
+  .thanks-inner{
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 770px){
+  .carousel-caption-text{
+    margin-bottom: 1pt;
   }
 }
 
@@ -387,9 +423,13 @@ a.fa:hover {
   .video-text span {
     font-size: 36pt;
   }
-
   .video-subtext span {
     font-size: 24pt;
+  }
+  .soundcloud-embed{
+  max-width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
   }
 }
 
@@ -400,5 +440,19 @@ a.fa:hover {
   #tittle-video-article{
     height: 60vh;
     margin-bottom: 30vh;
+  }
+}
+
+@media(max-width: 1200px) {
+  #portraits{
+    max-width: 50%;
+    margin-left: 25%;
+  }
+}
+
+@media(max-width: 600px) {
+  #portraits{
+    max-width: 90%;
+    margin-left: 10%;
   }
 }
