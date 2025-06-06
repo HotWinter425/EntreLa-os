@@ -85,10 +85,15 @@ figcaption {
 .nav-link {
   font-size: 13.5pt;
   font-family: Agrandir;
+  padding: 4px .5rem !important;
 }
 
 strong{
   font-weight: bold;
+}
+
+.font-14pt p{
+  font-size: 14pt;
 }
 
 /* ===== Layout e Componentes ===== */
@@ -261,7 +266,6 @@ a.fa:hover {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 20vh;
   position: relative;
   height: 70vh;
   z-index: -1;
@@ -284,12 +288,11 @@ a.fa:hover {
 }
 
 .video-text-container {
-  position: absolute;
-  top: 105%;
-  left: 50%;
   width: 75%;
-  max-width: 1010px;
-  transform: translate(-50%, -50%);
+  height: auto;
+  margin-left: 12.5%; 
+  margin-right: 12.5%;
+  transform: translate(0, -20%);
   z-index: 1;
 }
 
@@ -337,6 +340,39 @@ a.fa:hover {
 
 .flourish-chart {
   width: 100%;
+}
+
+/* ===== loader ============*/
+
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 200ms ease;
+}
+
+.laco {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash 1500ms linear alternate infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 3000;
+  }
+}
+
+body.loaded .page-loader {
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* ===== Media Queries ===== */
@@ -408,14 +444,20 @@ a.fa:hover {
   p{
   margin-bottom: 1.5em;
   }
-  .thanks-inner{
-    grid-template-columns: auto;
+  .thanks-inner {
+    grid-template-columns: 1fr !important;
+  }
+  .thanks-inner > div {
+    grid-row: auto !important;
   }
 }
 
 @media (max-width: 770px){
   .carousel-caption-text{
     margin-bottom: 1pt;
+  }
+  .video-text-container{
+    transform: translate(0, -45%);
   }
 }
 
@@ -433,13 +475,26 @@ a.fa:hover {
   }
 }
 
-@media (max-height: 667px) {
+@media (min-width: 1500px){
+  .video-text-container{
+    max-width: 1010px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-height: 800px) {
   .video-text-container {
-    top: 110%;
+    transform: translate(0, -102%);
   }
   #tittle-video-article{
-    height: 60vh;
-    margin-bottom: 30vh;
+    height: 80vh;
+    top: -20vh;
+    overflow: hidden
+  }
+  .video-container{
+    top: 20vh;
+    overflow: hidden;
   }
 }
 
