@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Projeto TCC">
-  <title>Entrelaços</title>
+  <title>Entrelaços sobre nós</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -12,6 +11,22 @@
 </head>
 
 <body>
+
+  <div class="page-loader">
+    <svg  width="313.6624" height="446.7376" viewBox="0 0 313.6624 446.7376" id="page-loader-icon">
+      <path class="laco" fill="none" stroke="#e87082" stroke-width="4" d="m.9621,2.3075c142.4254,59.3848,128.0432,505.3289,22.0432,437.3289-88.3779-56.6952,138.9544-277.4197,291.4787-312.5471"/>
+    </svg>
+  </div>
+
+  <script>
+    window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+    setTimeout(function() {
+      document.querySelector('.page-loader').style.display = 'none';
+    }, 100);
+    });
+  </script>
+
   <nav class="navbar navbar-expand-lg position-relative py-2">
     <div class="container-fluid">
       <div class="navbar-brand me-auto" href="#">
@@ -30,18 +45,18 @@
               reportagens
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="animigas.html">Aminimigas</a></li>
+              <li><a class="dropdown-item" href="aminimigas.html">Aminimigas</a></li>
               <li><a class="dropdown-item" href="Elas por elas.html">Elas por elas</a></li>
-              <li><a class="dropdown-item" href="#">Reportagem 3</a></li>
+              <li><a class="dropdown-item" href="Feminarte.html">Feminarte</a></li>
               <li><a class="dropdown-item" href="Entre iguais.html">Entre iguais</a></li>
-              <li><a class="dropdown-item" href="#">Reportagem 5</a></li>
+              <li><a class="dropdown-item" href="dando os nos.html">Dando os Nós</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link bar-border text-white" href="#">depoimentos</a>
+            <a class="nav-link bar-border text-white" href="depoimentos.html">depoimentos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link bar-border text-white" href="#">documentário</a>
+            <a class="nav-link bar-border text-white" href="documentario.html">documentário</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white active" href="sobre.html">sobre&nbsp;nós</a>
@@ -112,24 +127,24 @@
       <p class="text-center">Vitória Neves Toffolli de Oliveira Vulcano</p>
     </div>
     <div style="grid-row: 5;">
-      <h2 class="text-center" style="font-weight: bold; font-size: 15pt;">Suporte para captação de imagens - Minidocumentário </h2>
+      <h2 class="text-center" style="font-weight: bold; font-size: 15pt;">Suporte para captação de imagens - Documentário </h2>
       <p class="text-center">Emanuele Victória dos Santos Bizzo</p>
       <p class="text-center">Lívia Panassolo Moraes</p>
     </div>
     
     <!-- Column 2 -->
     <div style="grid-row: 1;">
-      <h2 class="text-center" style="font-weight: bold; font-size: 15pt;">Produção - Minidocumentário</h2>
+      <h2 class="text-center" style="font-weight: bold; font-size: 15pt;">Produção - Documentário</h2>
       <p class="text-center">Letícia Coelho Stradiotto</p>
       <p class="text-center">Vitória Neves Toffolli de Oliveira Vulcano</p>
     </div>
     <div style="grid-row: 2;">
-      <h2 class="text-center" style="font-weight: bold; font-size: 15pt;">Roteiro - Minidocumentário</h2>
+      <h2 class="text-center" style="font-weight: bold; font-size: 15pt;">Roteiro - Documentário</h2>
       <p class="text-center">Letícia Coelho Stradiotto</p>
       <p class="text-center">Vitória Neves Toffolli de Oliveira Vulcano</p>
     </div>
     <div style="grid-row: 3;">
-      <h2 class="text-center" style="font-weight: bold; font-size: 15pt;">Edição - Minidocumentário </h2>
+      <h2 class="text-center" style="font-weight: bold; font-size: 15pt;">Edição - Documentário </h2>
       <p class="text-center">Letícia Coelho Stradiotto</p>
     </div>
     <div style="grid-row: 4;">
