@@ -151,6 +151,7 @@ main {
   border-width: 0;
   padding: 25px;
 }
+
 .landing-box:hover{
   scale: 1.02;
   color: white;
