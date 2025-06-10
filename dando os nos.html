@@ -24,6 +24,11 @@
       document.querySelector('.page-loader').style.display = 'none';
     }, 100);
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      for (const link of Array.from(document.querySelectorAll(".md-typeset a[href^=http]")))
+        link.target = "_blank"
+    })
   </script>
 
   <nav class="navbar navbar-expand-lg position-relative py-2">
@@ -48,11 +53,11 @@
               <li><a class="dropdown-item" href="Elas por elas.html">Elas por elas</a></li>
               <li><a class="dropdown-item" href="Feminarte.html">Feminarte</a></li>
               <li><a class="dropdown-item" href="Entre iguais.html">Entre iguais</a></li>
-              <li><a class="dropdown-item active active-dropdown" href="dando os nos.html">Dando os Nós</a></li>
+              <li><a class="dropdown-item active active-dropdown" href="dando os nos.html">Dando os nós</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link bar-border text-white" href="cartas a elas.html">cartas a elas</a>
+            <a class="nav-link bar-border text-white" href="cartas a elas.html">cartas&nbsp;a&nbsp;elas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link bar-border text-white" href="documentario.html">documentário</a>
@@ -104,20 +109,20 @@
 
 
     <figure class="my-4">
-      <img src="data/reportagem5/IMAGEM 1.png" alt="" style="width:75%; margin-left: 12.5%;">
+      <img src="data/reportagem5/IMAGEM 1.jpg" alt="" style="width:75%; margin-left: 12.5%;">
       <figcaption>Ressignificar cicatrizes é construir uma nova história, em que o afeto, o autocuidado e a sororidade são os personagens principais (Foto: Reprodução/Jardim Consciente)</figcaption>
     </figure>
 
     <p>Individual e coletivamente, os processos de reconstrução ainda se entrelaçam com a chamada “<a href="https://claudia.abril.com.br/coluna/caroline-apple/preciso-curar-meu-feminino/">cura da linhagem feminina</a>”, prática considerada um misto de reconhecimento familiar e libertação emocional. “A ancestralidade feminina é um portal de sabedoria. Quando nos conectamos com as mulheres que vieram antes de nós e, assim, com suas histórias, traumas e conquistas, acessamos uma força que vai além da razão”, assinala a astróloga e psicoterapeuta, <strong>Amanda Rodrigues</strong>.</p>
     <p>Uma vez que acessar essa energia requer contatos intensos com feridas de diversas origens, a espiritualista afirma que a “cura” — entre aspas, como ela mesma enfatiza, por tratar-se de uma ação de autorresponsabilidade — ajuda a retirar amarras, antes involuntárias, dos vínculos femininos.</p>
     <p>“É essencial principalmente para ressignificar os vínculos com mães, avós, filhas e irmãs de sangue ou de alma. Ao olhar para essa linhagem com consciência, abrimos espaço para relações mais livres, autênticas e amorosas com outras mulheres”, completa.</p>
-    <p>Quando uma mulher remedia o passado, cicatriza também sua linhagem. <a href="https://www.personare.com.br/conteudo/rituais-das-mulheres-e-as-praticas-ancestrais-da-sua-familia-m53041">Práticas ancestrais femininas</a> seguem sendo transmitidas entre as gerações: de avós para netas, de mães para filhas e até entre amigas. O clássico “minha avó sempre dizia”, geralmente relacionado à saúde e ao bem-estar, é um símbolo desse legado.</p>
+    <p>Aliás, quando uma mulher remedia o passado, cicatriza também sua linhagem. <a href="https://www.personare.com.br/conteudo/rituais-das-mulheres-e-as-praticas-ancestrais-da-sua-familia-m53041">Práticas ancestrais femininas</a> seguem sendo transmitidas entre as gerações: de avós para netas, de mães para filhas e até entre amigas. O clássico “minha avó sempre dizia”, geralmente relacionado à saúde e ao bem-estar, é um símbolo desse legado.</p>
     <p>Chás, xaropes, banhos e escalda-pés, por exemplo, são técnicas populares que fazem parte de um conhecimento transmitido, principalmente, pelas mulheres. Historicamente, elas são reconhecidas como <a href="https://almapreta.com.br/sessao/cotidiano/guardias-de-conhecimento-ancestral-mulheres-falam-sobre-o-uso-de-plantas-medicinais/">guardiãs de um conhecimento ancestral</a> por serem responsáveis pelos cuidados dentro das comunidades, mesmo sem a devida identificação por parte da medicina convencional. Benzedeiras, rezadeiras e curandeiras mantêm vivas práticas que, hoje, ganham novo olhar por meio da ciência e de movimentos de resgate cultural.</p>
     <p>No Maranhão, mais especificamente na Terra Indigena Arariboia, esse <a href="https://www.brasildefato.com.br/podcast/momento-agroecologico/2024/04/04/conheca-a-cura-ancestral-pelas-maos-de-mulheres-indigenas-no-maranhao/">saber descendente</a> é preservado e transmitido por iniciativas como a Articulação das Mulheres Indígenas do Maranhão (Anima). Ali, a medicina tradicional é um elo entre gerações e uma forma de manter viva a identidade local.</p>
 
     <figure class="my-4">
       <img src="data/reportagem5/IMAGEM 2 - povo maranhão.png" alt="" style="width:100%">
-      <figcaption>Ressignificar cicatrizes é construir uma nova história, em que o afeto, o autocuidado e a sororidade são os personagens principais (Foto: Reprodução/Jardim Consciente)</figcaption>
+      <figcaption>Plantas medicinais, como cumaru, copaíba e andiroba, participam dos cultos ancestrais realizados pelo povo Arariboia (Foto: reprodução/Brasil de Fato)</figcaption>
     </figure>
 
     <h3>É mais fácil dar a mão para quem se parece com você?</h3>
@@ -134,8 +139,7 @@
 
     <p>Apesar das evidências científicas, nem sempre a procura por afeto e apoio entre mulheres é incentivada — uma das consequências do fenômeno cultural da <a href="https://www.estadao.com.br/emais/moda-e-beleza/por-que-as-mulheres-competem-entre-si/?srsltid=AfmBOooH-6Wv7CV29SJJyqZVry7zieQuwNe9T4ReChBycziak4q6_1Fx">rivalidade feminina</a>. <strong>Jade Míguez</strong>, ciberativista e pesquisadora sobre Gênero, Raça e Classe, relata ter ouvido por muitos anos que seus amigos deveriam ser apenas homens. Através do feminismo, como outras pessoas, ela entendeu que o estímulo à competição feminina estava inevitavelmente ligado à sociedade patriarcal.</p>
 
-    <div class="citation my-4"><div class="citation-inner">“Não vamos sair do lugar que ocupamos se não tivermos consciência da nossa própria opressão. As mulheres não vão do dia para a noite entender que você não é rival delas. O primeiro passo para tudo é assumir uma mentalidade crítica. Às vezes, uma pessoa não muda porque nunca teve alguém que pudesse ensiná-la, ou não teve um meio, um espaço, uma vivência que proporcionasse esse aprendizado”,</div> <div class="citation-ref">esclarece a graduanda em Ciências Sociais na Universidade Federal do Recôncavo da Bahia (UFRB).
-    </div></div>
+    <div class="citation my-4"><div class="citation-inner">“Não vamos sair do lugar que ocupamos se não tivermos consciência da nossa própria opressão. As mulheres não vão do dia para a noite entender que você não é rival delas. O primeiro passo para tudo é assumir uma mentalidade crítica. Às vezes, uma pessoa não muda porque nunca teve alguém que pudesse ensiná-la, ou não teve um meio, um espaço, uma vivência que proporcionasse esse aprendizado”,</div> <div class="citation-ref">esclarece a graduanda em Ciências Sociais na Universidade Federal do Recôncavo da Bahia (UFRB)</div></div>
 
     <p>Existem diversos caminhos para repensar a ideia de que mulheres são adversárias naturais, bem como para conhecer perspectivas plurais sobre as experiências femininas. Um deles é a <a href="https://qgfeminista.org/escuta-ativa-entre-mulheres/">escuta ativa</a>, que, em um mundo acostumado a silenciar populações vulneráveis, propõe mais que simplesmente ouvir as palavras emitidas por alguém: você deve se concentrar na mensagem, na linguagem corporal, nas emoções e no contexto de cada conversa.</p>
 
@@ -154,11 +158,11 @@
       <img src="data/reportagem5/GLOSSÁRIO.png" alt="" style="width:100%">
     </figure>
 
-    <p>Outro ponto sensível do debate está nas trajetórias das mulheres trans, que vem sofrendo ataques sistemáticos a direitos básicos em várias partes do globo, especialmente nos <a href="https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2025-04/embaixada-diz-que-governo-dos-eua-so-reconhece-dois-sexos-imutaveis">Estados Unidos</a> e no <a href="https://www.cnnbrasil.com.br/internacional/reino-unido-decide-que-definicao-legal-de-mulher-exclui-mulheres-trans/">Reino Unido</a>.</p>
+    <p>Outro ponto sensível do debate está nas trajetórias das mulheres trans, que vêm sofrendo ataques sistemáticos a direitos básicos em várias partes do globo, especialmente nos <a href="https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2025-04/embaixada-diz-que-governo-dos-eua-so-reconhece-dois-sexos-imutaveis">Estados Unidos</a> e no <a href="https://www.cnnbrasil.com.br/internacional/reino-unido-decide-que-definicao-legal-de-mulher-exclui-mulheres-trans/">Reino Unido</a>.</p>
     <p>“O mínimo de dignidade foi oferecido à mulher cisgênero, de maneira geral, pelo fato de ela ter um útero e ser capaz de dar a luz a uma criança. Então, uma mulher sem útero não atinge nem esse mínimo. São várias as raízes para que pessoas trans, principalmente mulheres, sofram esse processo de exclusão. Acho que só tendo nomes em todas as áreas — música, cinema, ciência, entre outras — para avançarmos na mentalidade social, porque muita gente ainda tem o estereótipo de que pessoa trans estão somente na prostituição. O desconhecimento é um motor para o ódio. Então, nós que acreditamos em um mundo mais justo e igualitário, precisamos, sobretudo, compartilhar informação de qualidade”, analisa <strong>Gabriela Augusto</strong>, mulher trans e fundadora da <a href="https://transcendemos.com.br/">Transcendemos</a>, empresa de consultoria em diversidade e inclusão.</p>
     <p>A iniciativa, inclusive, surgiu após a transição de gênero da especialista, que se deparou com uma série de desafios ao tentar se inserir no mercado de trabalho e encontrar pessoas parecidas consigo.</p>
 
-    <iframe class="soundcloud-embed mt-4" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2105530956&color=%23e83082&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/entrelacos" title="Entrelaços" target="_blank" style="color: #cccccc; text-decoration: none;">Entrelaços</a> · <a href="https://soundcloud.com/entrelacos/entrevista-gabriela-augusto" title="Entrevista | Gabriela Augusto" target="_blank" class="soundcloud-embed-text" style="color: #cccccc; text-decoration: none;">Entrevista | Gabriela Augusto</a></div>
+    <iframe class="soundcloud-embed mt-4" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2105530956&color=%23e83082&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div class="mb-4" style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/entrelacos" title="Entrelaços" target="_blank" style="color: #cccccc; text-decoration: none;">Entrelaços</a> · <a href="https://soundcloud.com/entrelacos/entrevista-gabriela-augusto" title="Entrevista | Gabriela Augusto" target="_blank" class="soundcloud-embed-text" style="color: #cccccc; text-decoration: none;">Entrevista | Gabriela Augusto</a></div>
 
     <p>Quando mulheres impulsionam umas às outras, percebendo suas potencialidades tanto nas semelhanças quanto nas diferenças, o <a href="https://g1.globo.com/fantastico/podcast/prazer-renata/noticia/2022/09/04/prazer-renata-empoderamento-feminino-e-o-seu-real-significado-com-a-escritora-joice-berth.ghtml">empoderamento feminino (em seu real significado)</a> também se torna realizável. Assim, mobilizam-se setores financeiros, sociais, jurídicos, emocionais e políticos em prol de dias melhores.</p>
 
@@ -209,7 +213,7 @@
     <p>Apesar de não ser um sonho declarado, a liberdade é o caminho para o qual todos os desejos e metas das mulheres entrevistadas aponta. Por outro lado, desistir de sonhar caracteriza uma realidade comum: já aconteceu com 75% das participantes do estudo por diversos motivos.</p>
     <p>Nesse contexto, para seguir acreditando na capacidade e no propósito umas das outras, é mais do que válido retornar às nossas origens.</p>
 
-    <div class="citation my-4"><div class="citation-inner">“Sabemos muito pouco sobre as mulheres da nossa vida. Parece que sempre sabemos de um tio que jogou num time de futebol ou de um avô que lutou na guerra… as histórias dos homens chegam até nós como um feito, algo a ser destacado na trajetória da família. Mas, no caso oposto, não — porque é como se tudo que essas mulheres fizeram não fosse mais do que a obrigação delas. <span style="text-decoration: underline; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">Esse é um apelo interessante para fazermos: conhecermos melhor as mulheres da nossa vida, de outras gerações da nossa família. Para que entendamos como chegamos até aqui, para que reverenciemos essas mulheres e para não deixarmos que elas se apaguem no tempo</span>”,</div> <div class="citation-ref">convida a socióloga e psicanalista Ingrid Gerolimich.</div></div>
+    <div class="citation my-4"><div class="citation-inner">“Sabemos muito pouco sobre as mulheres da nossa vida. Parece que sempre sabemos de um tio que jogou num time de futebol ou de um avô que lutou na guerra… as histórias dos homens chegam até nós como um feito, algo a ser destacado na trajetória da família. Mas, no caso oposto, não — porque é como se tudo que essas mulheres fizeram não fosse mais do que a obrigação delas. <span style="text-decoration: underline; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">Esse é um apelo interessante para fazermos: conhecermos melhor as mulheres da nossa vida, de outras gerações da nossa família. Para que entendamos como chegamos até aqui, para que reverenciemos essas mulheres e para não deixarmos que elas se apaguem no tempo</span>”,</div> <div class="citation-ref">convida a socióloga e psicanalista Ingrid Gerolimich</div></div>
 
     <div class="flourish-embed flourish-cards" data-src="visualisation/23532138"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/23532138/thumbnail" width="100%" alt="cards visualization" /></noscript></div>
 

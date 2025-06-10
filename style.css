@@ -138,6 +138,26 @@ main {
   margin-left: 42.5%;
 }
 
+.landing-box{
+  font-size: 14pt;
+  font-family: montserrat, Arial, Helvetica, sans-serif;
+  text-align: left;
+  color: white;
+  display: flexbox;
+  background-color: var(--main-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border-width: 0;
+  padding: 25px;
+}
+.landing-box:hover{
+  scale: 1.02;
+  color: white;
+  box-shadow: 8px 8px 5px lightblue;
+  animation-duration: 100ms;
+}
+
 /* ===== Cards e Containers ===== */
 .card {
   z-index: -1;
@@ -307,6 +327,10 @@ a.fa:hover {
 }
 
 .video-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
   color: rgb(19, 19, 19);
   text-align: center;
   background-color: var(--main-color);
@@ -338,8 +362,12 @@ a.fa:hover {
 /* ===== Grids ===== */
 .thanks-inner {
   display: grid;
-  grid-template-columns: auto auto;
   grid-gap: 2em;
+  grid-template-columns: 1fr !important;
+}
+
+.thanks-inner > div {
+  grid-row: auto !important;
 }
 
 .bar-border {
@@ -350,6 +378,12 @@ a.fa:hover {
 
 .flourish-chart {
   width: 100%;
+}
+
+.landing-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2em;
 }
 
 /* ===== loader ============*/
@@ -468,12 +502,6 @@ body.loaded .page-loader {
   p{
   margin-bottom: 1.5em;
   }
-  .thanks-inner {
-    grid-template-columns: 1fr !important;
-  }
-  .thanks-inner > div {
-    grid-row: auto !important;
-  }
 }
 
 @media (max-width: 770px){
@@ -481,8 +509,15 @@ body.loaded .page-loader {
     margin-bottom: 1pt;
   }
   .video-text-container{
+
     transform: translate(0, -45%);
     margin-bottom: -100px;
+  }
+  .landing-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .landing-grid > div {
+    grid-row: auto !important;
   }
 }
 
@@ -524,6 +559,22 @@ body.loaded .page-loader {
   }
 }
 
+@media (max-height: 700px) {
+  .video-text-container {
+    transform: translate(0, -91%);
+    margin-bottom: -150px
+  }
+  #tittle-video-article{
+    height: 80vh;
+    top: -20vh;
+    overflow: hidden
+  }
+  #article-responsive{
+    top: 20vh;
+    overflow: hidden;
+  }
+}
+
 @media(max-width: 1200px) {
   #portraits{
     max-width: 50%;
@@ -535,5 +586,11 @@ body.loaded .page-loader {
   #portraits{
     max-width: 90%;
     margin-left: 10%;
+  }
+}
+@media (max-height: 450px) {
+  .video-text-container {
+    transform: translate(0, -50%);
+    margin-bottom: -100px
   }
 }

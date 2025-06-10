@@ -26,6 +26,11 @@
       document.querySelector('.page-loader').style.display = 'none';
     }, 100);
     });
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      for (const link of Array.from(document.querySelectorAll(".md-typeset a[href^=http]")))
+        link.target = "_blank"
+    })
   </script>
 
   <nav class="navbar navbar-expand-lg position-relative py-2">
@@ -50,11 +55,11 @@
               <li><a class="dropdown-item" href="Elas por elas.html">Elas por elas</a></li>
               <li><a class="dropdown-item" href="Feminarte.html">Feminarte</a></li>
               <li><a class="dropdown-item" href="Entre iguais.html">Entre iguais</a></li>
-              <li><a class="dropdown-item" href="dando os nos.html">Dando os Nós</a></li>
+              <li><a class="dropdown-item" href="dando os nos.html">Dando os nós</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link bar-border text-white" href="cartas a elas.html">cartas a elas</a>
+            <a class="nav-link bar-border text-white" href="cartas a elas.html">cartas&nbsp;a&nbsp;elas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link bar-border text-white" href="documentario.html">documentário</a>
@@ -79,33 +84,72 @@
   <main class="container my-5 font-14pt">
     <p>Este projeto nasceu da amizade de duas mulheres que, ao se identificarem nos próprios afetos, se encantaram pelo poder do feminino, que atravessa gerações, se manifesta em gestos cotidianos e se reinventa em meio às adversidades. Movidas por esse encantamento, decidiram investigar o que torna os laços entre mulheres tão potentes.</p>
     <p >Após meses de pesquisa, escuta e trocas profundas, uma certeza se impôs: juntas, somos gigantes. <span style="text-decoration: underline; font-size: 14pt">Há uma força inabalável nas relações femininas – uma força que não se vê, mas que sentimos atravessar distâncias e reencontrar caminhos.</p>
-    <p >As histórias reunidas aqui se cruzam, se desencontram e, em algum momento, se reconhecem. Mais do que objeto de análise, os vínculos entre mulheres são fortalezas vivas. <em >Entrelaços</em> é um convite ao acolhimento dessas conexões invisíveis e indestrutíveis, que seguem sendo tecidas todos os dias, em silêncio ou em voz alta [<strong >com a coragem de quem cuida, com o afeto de quem resiste e com o poder de quem não está sozinha</strong>].</p>
+    <p >As histórias reunidas aqui se cruzam, se desencontram e, em algum momento, se reconhecem. Mais do que objeto de análise, os vínculos entre mulheres são fortalezas vivas. <em style="font-size: 14pt">Entrelaços</em> é um convite ao acolhimento dessas conexões invisíveis e indestrutíveis, que seguem sendo tecidas todos os dias, em silêncio ou em voz alta [<strong style="font-size: 14pt" >com a coragem de quem cuida, com o afeto de quem resiste e com o poder de quem não está sozinha</strong>].</p>
 
-    <div class="container my-5">
-      <div class="row featurette" data-aos="fade-left">
-        <div class="col-md-7">
-          <h2>Primeiro call to action</h2>
-          <p>Vestibulum dapibus porttitor mattis. Vivamus libero metus, consectetur at tortor ac, ultricies egestas purus.</p>
-        </div>
-        <div class="col-md-5">
-          <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-        </div>
+  <div class="my-5" style="margin-left: auto; margin-right: auto; max-width: 1200px; padding-inline: 50px;">
+    <div class="landing-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2em;">
+      <!-- Column 1 -->
+      <div style="grid-row: 1;">
+        <h2 class="text-center" style="font-weight: bold;">Reportagens</h2>
+      </div>
+      <div style="grid-row: 2;">
+        <a href="aminimigas.html" class="btn landing-box" style="background-color: #E76D98;">
+          <h2>1. Aminimigas</h2>
+          <p style="margin-bottom: 0;">Por que aprendemos a nos odiar se estamos conectadas?</p>
+        </a>
+      </div>
+      <div style="grid-row: 3;">
+        <a href="Elas por elas.html" class="btn landing-box" style="background-color: #E26CB2">
+          <h2 >2. Elas por elas</h2>
+          <p style="margin-bottom: 0;">Como as relações entre mulheres se transformaram em atos políticos</p>
+        </a>
+      </div>
+      <div style="grid-row: 4;">
+        <a href="Feminarte.html" class="btn landing-box" style="background-color: #D76ECC">
+          <h2 >3. Feminarte</h2>
+          <p style="margin-bottom: 0;">Cultura é ciência, futuro e substantivo feminino</p>
+        </a>
+      </div>
+      <div style="grid-row: 5;">
+        <a href="Entre iguais.html" class="btn landing-box" style="background-color: #C378DF">
+          <h2 >4. Entre iguais</h2>
+          <p style="margin-bottom: 0;">Por que aprendemos a nos odiar se estamos conectadas?</p>
+        </a>
+      </div>
+      <div style="grid-row: 6;">
+        <a href="dando os nos.html" class="btn landing-box" style="background-color: #AD83E9;">
+          <h2 >5. Dando os nós</h2>
+          <p style="margin-bottom: 0;">Por que aprendemos a nos odiar se estamos conectadas?</p>
+        </a>
       </div>
 
-      <div style="height: 5vh;"></div>
-
-      <div class="row featurette" data-aos="fade-right">
-        <div class="col-md-7 order-md-2">
-          <h2>Algum título muito bom para uma citação</h2>
-          <p>Nulla placerat lacus id lorem facilisis, convallis venenatis orci consectetur. Donec vel faucibus risus, vel tempor tortor.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <svg aria-label="Placeholder: 500x500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
-        </div>
+      <!-- Column 2 -->
+      <div style="grid-row: 1;">
+        <h2 class="text-center" style="font-weight: bold;">Saiba mais</h2>
+      </div>
+      <div style="grid-row: 2;">
+        <a href="sobre.html" class="btn landing-box" style="background-color: #978DEC;">
+          <h2>Sobre nós</h2>
+          <p style="margin-bottom: 0;">Por que aprendemos a nos odiar se estamos conectadas?</p>
+        </a>
+      </div>
+      <div style="grid-row: 3;">
+        <a href="cartas a elas.html" class="btn landing-box" style="background-color: #8295EA;">
+          <h2>Cartas a elas</h2>
+          <p style="margin-bottom: 0;">Por que aprendemos a nos odiar se estamos conectadas?</p>
+        </a>
+      </div>
+      <div style="grid-row: 4;">
+        <a href="documentario.html" class="btn landing-box" style="background-color: #6A9CE8;">
+          <h2>Documentário</h2>
+          <p style="margin-bottom: 0;">Por que aprendemos a nos odiar se estamos conectadas?</p>
+        </a>
       </div>
     </div>
+  </div>
 
   </main>
+
 
   <footer class="text-center">
     <p style="color: rgb(0, 0, 0);">Trabalho de Conclusão de Curso de Jornalismo</p>
